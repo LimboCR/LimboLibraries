@@ -1,3 +1,12 @@
+/*
+ * Dynamic storages by Limbo allows to make routine creation of dictionaries,
+ * that can be visible in inspector and populated from list, easier and faster.
+ * Works absolutely same as Dictinary<Key, Item>, but have commonly required features already embedded.
+ * 
+ * Potential use cases: Inventory Items Storage, Pictures Storage, Soundtracks Storage,
+ * Prefabs Storage, and basically anything that needs to be stored.
+ */
+
 using System.Collections.Generic;
 using UnityEngine;
 

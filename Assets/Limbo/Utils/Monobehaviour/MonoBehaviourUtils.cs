@@ -37,6 +37,11 @@ namespace Limbo.Utils.MonoBe
         #endregion
 
         #region Instantiate Empty GameObject
+        /*
+         * Allows easier way of instantiationg empty GameObjects and assigning them the right way.
+         * Returns instantiated GameObject.
+         */
+
         /// <summary>
         /// Safely Instantiates new empty gameobject without unnecessary duplications, returnig refernce to self.
         /// </summary>

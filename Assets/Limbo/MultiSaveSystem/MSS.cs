@@ -665,7 +665,7 @@ namespace Limbo.MultiSaveSystem
 
         #endregion
 
-
+        #region Helper Classes
         [Serializable]
         public class Wrapper
         {
@@ -804,5 +804,7 @@ namespace Limbo.MultiSaveSystem
                 ActiveSavePath = Application.persistentDataPath + $"/save{slotNumber}.save";
             }
         }
+
+        #endregion
     }
 }

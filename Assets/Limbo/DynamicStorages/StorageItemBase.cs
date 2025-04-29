@@ -1,4 +1,7 @@
-using UnityEngine;
+/*
+ * Base script for the items of DynamicStorage.
+ * Just inherit it, and add whatever is required.
+ */
 
 namespace Limbo.DynamicStorages
 {

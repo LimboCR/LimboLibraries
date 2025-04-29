@@ -1,3 +1,8 @@
+/*
+ * Easier way of using Animator and avoiding spaghetti inside of it.
+ * Will be extendet in future to include most of animator use cases.
+ */
+
 using System;
 using System.Collections.Generic;
 using UnityEngine;

@@ -130,6 +130,9 @@ namespace Limbo.Utils.Collections.Generic
 
             public void Reset() => enumerator.Reset();
 
+            // Garbage Collection To use in case of attempting to modify the list when it's Enumerating.
+            // It allows to remove items of the list after Enumerating finished automatically.
+            // Sutable for dynamic usage of a list in case of potential modifications while Enumerating.
             public void Dispose()
             {
                 enumerator.Dispose();

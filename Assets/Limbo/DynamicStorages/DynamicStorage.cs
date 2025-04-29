@@ -1,3 +1,7 @@
+/*
+ * Same as DynamicStorageBase, but ready to be embeded into your script inside of inspector
+ */
+
 using System;
 using System.Collections.Generic;
 using UnityEngine;
