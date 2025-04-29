@@ -154,41 +154,6 @@ namespace Limbo.Utils.Collections.Generic
         }
     }
 
-
-    public IEnumerator<T> GetEnumerator()
-        {
-            return new ObservableEnumerator(this, internalList.GetEnumerator());
-        }
-
-        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
-
-        private class ObservableEnumerator : IEnumerator<T>
-        {
-            private readonly ObservableList<T> parent;
-            private readonly IEnumerator<T> enumerator;
-
-            public ObservableEnumerator(ObservableList<T> parent, IEnumerator<T> enumerator)
-            {
-                this.parent = parent;
-                this.enumerator = enumerator;
-                parent.IsEnumerating = true;
-            }
-
-            public T Current => enumerator.Current;
-            object IEnumerator.Current => Current;
-
-            public bool MoveNext() => enumerator.MoveNext();
-
-            public void Reset() => enumerator.Reset();
-
-            public void Dispose()
-            {
-                parent.IsEnumerating = false;
-                enumerator.Dispose();
-            }
-        }
-    }
-
     public static class ArrayUtils
     {
         public static void ListCleaner<T>(List<T> list)
